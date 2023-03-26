@@ -23,24 +23,3 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
 const arr = hideBin(process.argv);
 const { argv } = yargs(arr);
 invokeAction(argv);
-
-// const actionIndex = process.argv.indexOf("--action");
-
-// if (actionIndex !== -1) {
-//   const action = process.argv[action + 1];
-//   console.log(action);
-//   invokeAction({ action });
-// }
-
-// invokeAction({ action: "list" });
-// invokeAction({ action: "getContactById", id: "1tOO9nL-S4uBqMPIxFzS_" });
-// invokeAction({
-//   action: "addContact",
-//   name: "Vlad",
-//   email: "vlad@mail.com",
-//   phone: "313-21-45",
-// });
-// invokeAction({
-//   action: "removeContact",
-//   id: "1tOO9nL-S4uBqMPIxFzS_",
-// });
